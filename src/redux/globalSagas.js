@@ -9,7 +9,7 @@ import pokemonSaga from './pokemonReducer/saga'
  */
 export default function* saga() {
     yield all([
-        pokemonSaga  
+        pokemonSaga()  
     ])
 }
 

@@ -13,11 +13,12 @@ import {
 import * as CONSTANT from '../../utils/contants'
 
 /** Request pokemon list  */
-export function* fetchPokemonList(action) {
+export function* fetchPokemonList() {
     try {
         const requestURL = `${CONSTANT.BASE_URL}/pokemon?limit=20&offset=20`;
         const options = {
           method: 'GET',
+          'Access-Control-Allow-Origin': '*'
         };
         const response = yield call(request, requestURL, options);
         yield put(fetchPokemonListSuccess(response))

@@ -16,9 +16,8 @@ export const initialState = {
     },
 }
 
-const pokemonReducer = (initialState, action) => {
-    let state = initialState
-    switch (action) {
+const pokemonReducer = (state = initialState, action) => {
+    switch (action.type) {
         case ACTION.FETCH_POKEMON_LIST:
             state = {
                 ...state,

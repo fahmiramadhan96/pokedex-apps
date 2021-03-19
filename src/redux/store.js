@@ -10,10 +10,11 @@ import globalReducers from './globalReducers'
 import globalSagas from './globalSagas'
 
 const sagaMiddleware = createSagaMiddleware()
-sagaMiddleware.run(globalSagas)
 const store = createStore(
   globalReducers,
   applyMiddleware(sagaMiddleware)
 )
+
+sagaMiddleware.run(globalSagas)
 
 export default store
