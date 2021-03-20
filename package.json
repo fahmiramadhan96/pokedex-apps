@@ -1,5 +1,5 @@
 {
-  "name": "pokedex-app",
+  "name": "pokedex-apps",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,7 +20,7 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "react-scripts start",
     "build": "craco build",
     "test": "craco test"  },
   "eslintConfig": {
